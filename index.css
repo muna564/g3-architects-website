@@ -5,6 +5,14 @@
 /* shared styles */
 
 .btn-primary {
+  border-radius: 8px;
+  background: #ff900e;
+  color: #fff;
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
 }
 
 * {
@@ -61,4 +69,33 @@ nav li a {
 
 .banner-para {
   color: #727272;
+}
+
+.banner img {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* responsive media queries */
+
+/* mobile devices */
+
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
+
+/* tablet or medium devices */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 50px;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
